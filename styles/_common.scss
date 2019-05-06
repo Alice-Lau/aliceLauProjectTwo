@@ -1,0 +1,192 @@
+// colors
+$iceBlue: #fafffe;
+$charcoal: #262725;
+$marigold: #ffc600;
+$mudGreen: #555f02;
+$camoGreen: #1e140e;
+// font-family
+$dokdo: 'Dokdo', cursive;
+$lato: 'Lato', sans-serif;
+
+//****************************************************//
+//general styles//
+//****************************************************//
+html {
+    font-size: 125%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.logo a,
+h1,
+h2,
+h3 {
+    font-family: $dokdo;
+}
+
+.logo a,
+h1,
+h2,
+.wrapperHome h3,
+h4 {
+    color: $marigold;
+}
+
+.navLinks a,
+.heroTxt span,
+li,
+p,
+input,
+textarea {
+    font-family: $lato;
+    color: $iceBlue;
+}
+
+nav li {
+    font-weight: 700;
+}
+
+.heroTxt span,
+input,
+textarea {
+    font-weight: 300;
+}
+//****************************************************//
+//header styles//
+//****************************************************//
+.wrapper header {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapperBlog header,
+.wrapperContact header {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navBarTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40%;
+    font-size: 2.56rem;
+    padding-left: 5%;
+    text-align: center;
+}
+
+header nav {
+    width: 40%;
+}
+
+.navLinks {
+    padding-right: 5%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.navLinks a {
+    font-size: 1rem;
+    line-height: 1.45rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .3s linear;
+
+    &:hover {
+        color: $marigold;
+    }
+}
+
+.blogHeroTxt,
+.contactHeroTxt {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1 {
+        padding-left: 5%;
+        font-size: 5.25rem;
+        line-height: 3.48rem;
+        letter-spacing: 0.545rem;
+    }
+}
+
+//****************************************************//
+//main styles//
+//****************************************************//
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.245rem;
+}
+
+p,
+h4 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.button,
+input[type=submit] {
+    background: $mudGreen;
+    padding: 3px 5px;
+    font-family: $dokdo;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.215rem;
+    color: $iceBlue;
+}
+
+// form
+
+//****************************************************//
+//footer styles//
+//****************************************************//
+footer {
+    background: $charcoal;
+
+    p {
+        font-family: $lato;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        letter-spacing: 0.12rem;
+        color: $iceBlue;
+        text-align: center;
+    }
+}
+

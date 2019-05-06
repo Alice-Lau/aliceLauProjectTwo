@@ -1,0 +1,115 @@
+//****************************************************//
+//Styles for Contact Page//
+//****************************************************//
+
+//****************************************************//
+//header styles
+//****************************************************//
+.wrapperContact header {
+    background: url('../assets/contactHeaderBackground.jpg');
+}
+
+//****************************************************//
+//main styles
+//****************************************************//
+.contactContent {
+    background: $camoGreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactForm {
+    width: 65%;
+    padding: 0 0 5% 5%;
+}
+
+.getInTouch {
+    background: $charcoal;
+    padding: 10% 5%;
+    box-shadow: 20px 20px 0 $marigold;
+    position: relative;
+    top: -130px;
+}
+
+.senderInfo input {
+    width: calc( 49% - 6% );
+    height: 45px;
+    margin: 0 3%;
+    padding-left: 5%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $marigold;
+    font-family: $lato;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.05rem;
+    color: $iceBlue;
+}
+
+.messageInput textarea {
+    resize: none;
+    width: 100%;
+    margin: 5% 0;
+    padding: 5% 0 0 5%;
+    height: 200px;
+    background: transparent;
+    border: 2px solid $marigold;
+    font-family: $lato;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.05rem;
+    vertical-align: top;
+    color: $iceBlue;
+}
+
+.messageInput input {
+    width: 100%;
+
+    &[type=submit] {
+        background: $mudGreen;
+        height: 40px;
+        border: none;
+        font-family: $dokdo;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.05rem;
+        color: $iceBlue;
+    }
+}
+
+.contactInfo {
+    width: 35%;
+    padding: 9%;
+}
+
+.mediaContact ul {
+    width: 70%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        color: $marigold;
+    }
+}
+
+.mediaContact a {
+    font-family: $lato;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
+    color: $iceBlue;
+}
+
+.directContact a {
+    font-family: $lato;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: $iceBlue;
+}

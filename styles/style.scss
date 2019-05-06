@@ -1,0 +1,181 @@
+@import 'setup';
+@import 'common';
+@import 'blogStyle';
+@import 'contactStyle';
+
+//****************************************************//
+//Styles for Home Page//
+//****************************************************//
+
+//****************************************************//
+// header styles
+//****************************************************//
+.wrapperHome header {
+    background: url('../assets/homeHeaderBackground.jpg');
+    background-size: cover;
+    background-position: right top;
+    min-height: 95vh;
+}
+
+.heroContainer {
+    display: flex;
+    transform: translateY(30%);
+}
+
+.heroImg {
+    width: 40%;
+}
+
+.heroTxt {
+    width: 60%;
+    display: flex; // *repeated
+    flex-direction: column; // *repeated
+    justify-content: flex-start;
+}
+
+.heroTxt h1 {
+    margin: 0 3%;
+    font-size: 5.75rem;
+    line-height: 4.5rem;
+
+    span {
+        font-size: 2.5rem;
+    }
+}
+
+//****************************************************//
+// main styles
+//****************************************************//
+.newAdventure,
+.moreInfo {
+    background: $camoGreen;
+    padding: 10%;
+}
+
+.gallery,
+.courseInfo {
+    background: $charcoal;
+}
+
+.newAdventure,
+.galleryContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newAdventureTxt {
+    width: 70%;
+}
+
+.newAdventureImg {
+    width: 30%;
+}
+
+.gallery {
+    padding: 10%;
+    font-size: 0;
+
+    img {
+        width: calc( 33.33% - 4%/3 );
+        margin: 1%;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.moreInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.infoSelection {
+    width: calc( 50% - 2% );
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-child(odd) {
+        margin-right: 1%
+    }
+
+    &::nth-child(even) {
+        margin-left: 1%;
+    }
+}
+
+.icon {
+    background: $mudGreen;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 8px;
+    text-align: center;
+
+    i {
+        font-size: 1.5rem;
+        color: $iceBlue;
+    }
+}
+
+.infoTxt {
+    width: 90%;
+    padding-left: 3%;
+}
+
+.wrapperHome h3 {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.215rem;
+}
+
+.groupProgm,
+.newLocation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.groupProgmImg,
+.newLocationImg {
+    width: 40%;
+}
+
+.groupProgmImg {
+    transform: translateY(-20%);
+}
+
+.newLocationImg {
+    transform: translateY(20%);
+}
+
+.groupProgmImg img {
+    box-shadow: 20px 20px 0 $marigold;
+}
+
+.newLocationImg img {
+    box-shadow: -20px 20px 0 $marigold;
+}
+
+.groupProgmTxt,
+.newLocationTxt {
+    width: 60%;
+    padding: 3%;
+}
+
+.freeTrial {
+    background: $camoGreen;
+}
+
+.freeTrialTxt {
+    padding: 10%;
+    text-align: center;
+}
