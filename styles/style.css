@@ -194,6 +194,22 @@ input,
 textarea {
   font-weight: 300; }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1; }
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  opacity: 1; }
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; }
+
 .wrapper header {
   background-size: cover;
   background-repeat: no-repeat; }
@@ -277,7 +293,8 @@ h2 {
   letter-spacing: 0.245rem; }
 
 p,
-h4 {
+h4,
+.postList li {
   font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: 0.1rem; }
@@ -292,6 +309,64 @@ input[type=submit] {
   letter-spacing: 0.215rem;
   color: #fafffe; }
 
+.wrapperBlog main,
+.wrapperContact main {
+  background: #1e140e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+fieldset {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.formName {
+  margin-right: 1%; }
+
+.formEmail {
+  margin-left: 1%; }
+
+.formName,
+.formEmail {
+  width: calc( 50% - 1%); }
+  .formName input,
+  .formEmail input {
+    width: 100%;
+    height: 45px;
+    padding-left: 5%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffc600; }
+
+.formInput input,
+.formInput textarea {
+  width: 100%; }
+
+.formInput input[type=submit] {
+  border: none;
+  line-height: 2rem; }
+
+.formInput textarea {
+  resize: none;
+  margin: 5% 0;
+  padding: 5% 0 0 5%;
+  height: 200px;
+  background: transparent;
+  border: 2px solid #ffc600;
+  vertical-align: top; }
+
 footer {
   background: #262725; }
   footer p {
@@ -304,14 +379,6 @@ footer {
 
 .wrapperBlog header {
   background: url("../assets/blogHeaderBackground.jpg"); }
-
-.wrapperBlog main {
-  background: #1e140e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
 
 .blogLeftColumn {
   width: 60%; }
@@ -368,52 +435,6 @@ footer {
     padding: 3% 0;
     font-family: "Lato", sans-serif; }
 
-fieldset {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  fieldset .commentatorName {
-    margin-right: 1%; }
-  fieldset .commentatorEmail {
-    margin-left: 1%; }
-  fieldset .commentatorName,
-  fieldset .commentatorEmail {
-    width: calc( 50% - 1%); }
-    fieldset .commentatorName input,
-    fieldset .commentatorEmail input {
-      width: 100%;
-      height: 45px;
-      padding-left: 5%;
-      background: transparent;
-      border: none;
-      border-bottom: 2px solid #ffc600; }
-
-.commentInput input,
-.commentInput textarea {
-  width: 100%; }
-
-.commentInput input[type=submit] {
-  border: none;
-  line-height: 2rem; }
-
-.commentInput textarea {
-  resize: none;
-  margin: 5% 0;
-  padding: 5% 0 0 5%;
-  height: 200px;
-  background: transparent;
-  border: 2px solid #ffc600;
-  vertical-align: top; }
-
 .blogRightColumn {
   padding-top: 10%;
   display: -webkit-box;
@@ -437,9 +458,9 @@ fieldset {
   padding: 2%; }
 
 .asideImg img {
-  position: relative;
-  top: -30px;
-  right: -11px; }
+  -webkit-transform: translate(10px, -30px);
+  -ms-transform: translate(10px, -30px);
+  transform: translate(10px, -30px); }
 
 .asideMission,
 .recentPosts {
@@ -447,13 +468,7 @@ fieldset {
 
 .postList li {
   list-style: none;
-  list-style-position: inside;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  letter-spacing: 0.05rem;
-  color: #fafffe; }
+  list-style-position: inside; }
   .postList li::before {
     content: "\2022";
     color: #ffc600;
@@ -463,11 +478,7 @@ fieldset {
 .wrapperContact header {
   background: url("../assets/contactHeaderBackground.jpg"); }
 
-.contactContent {
-  background: #1e140e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.wrapperContact main {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: center;
@@ -475,57 +486,16 @@ fieldset {
   align-items: center; }
 
 .contactForm {
-  width: 65%;
-  padding: 0 0 5% 5%; }
-
-.getInTouch {
-  background: #262725;
-  padding: 10% 5%;
-  -webkit-box-shadow: 20px 20px 0 #ffc600;
-  box-shadow: 20px 20px 0 #ffc600;
-  position: relative;
-  top: -130px; }
-
-.senderInfo input {
-  width: calc( 49% - 6%);
-  height: 45px;
-  margin: 0 3%;
-  padding-left: 5%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #ffc600;
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  letter-spacing: 0.05rem;
-  color: #fafffe; }
-
-.messageInput textarea {
-  resize: none;
-  width: 100%;
-  margin: 5% 0;
-  padding: 5% 0 0 5%;
-  height: 200px;
-  background: transparent;
-  border: 2px solid #ffc600;
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  letter-spacing: 0.05rem;
-  vertical-align: top;
-  color: #fafffe; }
-
-.messageInput input {
-  width: 100%; }
-  .messageInput input[type=submit] {
-    background: #555f02;
-    height: 40px;
-    border: none;
-    font-family: "Dokdo", cursive;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: 0.05rem;
-    color: #fafffe; }
+  width: 65%; }
+  .contactForm form {
+    margin-left: 10%;
+    padding: 5%;
+    -webkit-box-shadow: 20px 20px 0 #ffc600;
+    box-shadow: 20px 20px 0 #ffc600;
+    background: #262725;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%); }
 
 .contactInfo {
   width: 35%;

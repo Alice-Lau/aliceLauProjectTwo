@@ -38,28 +38,31 @@
         </header>
         
         <main>
-            <div class="contactContent">
-                <div class="contactForm">
-                    <form class="getInTouch">
-                        <fieldset class="senderInfo">
-                            <label for="senderName" class="visuallyHidden">Name</label>
-                            <input id="senderName" type="text" class="senderName" placeholder="Name">
+            <div class="contactForm">
+                    <form>
+                        <fieldset>
+                            <div class="formName">
+                                <label for="senderName" class="visuallyHidden">Name</label>
+                                <input id="senderName" type="text" placeholder="Name">
+                            </div>
                     
-                            <label for="senderEmail" class="visuallyHidden">Email adress</label>
-                            <input id="senderEmail" type="email" class="senderEmail" placeholder="Email address">
+                            <div class="formEmail">
+                                <label for="senderEmail" class="visuallyHidden">Email adress</label>
+                                <input id="senderEmail" type="email" placeholder="Email address">
+                            </div>
                         </fieldset>
                     
-                        <fieldset class="messageInput">
-                            <label for="messageInput" class="visuallyHidden">Message</label>
-                            <textarea id="messageInput" placeholder="Message"></textarea>
+                        <fieldset class="formInput">
+                            <label for="messageInput" class="visuallyHidden">Messages</label>
+                            <textarea id="messagetInput" placeholder="Comments"></textarea>
                     
-                            <label for="messageSubmit" class="visuallyHidden">Submit</label>
-                            <input id="messageSubmit" type="submit" value="Post message">
+                            <label for="messageSubmit" class="visuallyHidden">Submit messages</label>
+                            <input id="messageSubmit" type="submit" value="Submit">
                         </fieldset>
                     </form>
-                </div>
+            </div>
 
-                <div class="contactInfo">
+            <div class="contactInfo">
                     <div class="mediaContact">
                         <ul>
                             <li>
@@ -98,7 +101,6 @@
                             <span>M5V2D5</span>
                         </a>
                     </div>
-                </div>
             </div>
         </main>
         

@@ -79,6 +79,11 @@ input,
 textarea {
     font-weight: 300;
 }
+
+input::placeholder,
+textarea::placeholder {
+    opacity: 1;
+}
 //****************************************************//
 //header styles//
 //****************************************************//
@@ -155,7 +160,8 @@ h2 {
 }
 
 p,
-h4 {
+h4,
+.postList li {
     font-size: 1rem;
     line-height: 1.6rem;
     letter-spacing: 0.1rem;
@@ -172,7 +178,65 @@ input[type=submit] {
     color: $iceBlue;
 }
 
+.wrapperBlog main,
+.wrapperContact main {
+    background: $camoGreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 // form
+fieldset {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formName {
+    margin-right: 1%;
+}
+
+.formEmail {
+    margin-left: 1%;
+}
+
+.formName,
+.formEmail {
+    width: calc( 50% - 1% );
+
+    input {
+        width: 100%;
+        height: 45px;
+        padding-left: 5%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid $marigold;
+    }
+}
+
+.formInput input,
+.formInput textarea {
+    width: 100%;
+}
+
+.formInput input[type=submit] {
+    border: none;
+    line-height: 2rem;
+}
+
+.formInput textarea {
+    resize: none;
+    margin: 5% 0;
+    padding: 5% 0 0 5%;
+    height: 200px;
+    background: transparent;
+    border: 2px solid $marigold;
+    vertical-align: top;
+}
 
 //****************************************************//
 //footer styles//
@@ -189,4 +253,3 @@ footer {
         text-align: center;
     }
 }
-
