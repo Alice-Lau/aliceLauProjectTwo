@@ -128,6 +128,10 @@
     letter-spacing: 0.215rem;
 }
 
+.courseInfo {
+    padding: 3% 0;
+}
+
 .groupProgm,
 .newLocation {
     display: flex;
@@ -164,11 +168,12 @@
 }
 
 .groupProgmTxt {
-    padding-right: 10%;
+    padding: 0 10% 0 5%;
 }
+// ^ specificity issue
 
 .newLocationTxt {
-    padding-left: 10%;
+    padding: 0 5% 0 10%;
 }
 
 .freeTrial {
@@ -251,6 +256,11 @@
     .infoTxt {
         flex-grow: 1;
     }
+
+    .groupProgmTxt,
+    .newLocationTxt {
+        padding: 0 5%;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -270,7 +280,16 @@
         margin: 15% 0;
     }
 
+    .groupProgmImg,
+    .groupProgmTxt,
+    .newLocationImg,
+    .newLocationTxt {
+        width: 50%;
+    }
 
+    .newLocationImg {
+        transform: translateY(13%);
+    }
 }
 
 @media (max-width: 1000px) {
@@ -323,6 +342,31 @@
 
         padding: 10% 5%;
     }
+
+    .courseInfo {
+        padding: 5%;
+        text-align: center;
+    }
+
+    .groupProgm {
+        flex-direction: column;
+    }
+
+    .newLocation {
+        flex-direction: column-reverse;
+    }
+
+    .groupProgmImg,
+    .newLocationImg {
+        width: 100%;
+        transform: none;
+    }
+
+    .groupProgmTxt,
+    .newLocationTxt {
+        width: 100%;
+        padding: 5%;
+    }
 }
 
 @media (max-width: 860px) {
@@ -332,6 +376,12 @@
 
     .infoTxt {
         width: 50%;
+    }
+
+    .banner img {
+        height: 400px;
+        object-fit: cover;
+        object-position: 76%;
     }
 }
 
@@ -347,6 +397,10 @@
             visibility: hidden;
             width: 0;
         }
+    }
+
+    .banner img {
+        object-position: 80%;
     }
 }
 
@@ -387,6 +441,19 @@
     .heroContainer {
         margin: 33% 2%;
     }
+
+    .courseInfo {
+        padding: 0;
+    }
+
+    .groupProgmImg img,
+    .newLocationImg img {
+        box-shadow: none;
+    }
+
+    .banner img {
+        height: 350px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -416,6 +483,10 @@
     }
 
     .newAdventureImg img {
+        height: 300px;
+    }
+
+    .banner img {
         height: 300px;
     }
 }

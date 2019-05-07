@@ -712,6 +712,9 @@ footer {
   line-height: 2.9rem;
   letter-spacing: 0.215rem; }
 
+.courseInfo {
+  padding: 3% 0; }
+
 .groupProgm,
 .newLocation {
   display: -webkit-box;
@@ -752,10 +755,10 @@ footer {
   padding: 3%; }
 
 .groupProgmTxt {
-  padding-right: 10%; }
+  padding: 0 10% 0 5%; }
 
 .newLocationTxt {
-  padding-left: 10%; }
+  padding: 0 5% 0 10%; }
 
 .freeTrial {
   background: #1e140e; }
@@ -811,7 +814,10 @@ footer {
   .infoTxt {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
-    flex-grow: 1; } }
+    flex-grow: 1; }
+  .groupProgmTxt,
+  .newLocationTxt {
+    padding: 0 5%; } }
 
 @media (max-width: 1150px) {
   .wrapperHome header {
@@ -825,7 +831,16 @@ footer {
 @media (max-width: 1100px) {
   .heroContainer {
     width: 90%;
-    margin: 15% 0; } }
+    margin: 15% 0; }
+  .groupProgmImg,
+  .groupProgmTxt,
+  .newLocationImg,
+  .newLocationTxt {
+    width: 50%; }
+  .newLocationImg {
+    -webkit-transform: translateY(13%);
+    -ms-transform: translateY(13%);
+    transform: translateY(13%); } }
 
 @media (max-width: 1000px) {
   .wrapperHome header {
@@ -862,13 +877,42 @@ footer {
       object-position: center 80%; }
   .newAdventureTxt {
     text-align: center;
-    padding: 10% 5%; } }
+    padding: 10% 5%; }
+  .courseInfo {
+    padding: 5%;
+    text-align: center; }
+  .groupProgm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .newLocation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .groupProgmImg,
+  .newLocationImg {
+    width: 100%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  .groupProgmTxt,
+  .newLocationTxt {
+    width: 100%;
+    padding: 5%; } }
 
 @media (max-width: 860px) {
   .heroTxt h1 {
     font-size: 5rem; }
   .infoTxt {
-    width: 50%; } }
+    width: 50%; }
+  .banner img {
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 76%;
+    object-position: 76%; } }
 
 @media (max-width: 790px) {
   .wrapperHome header {
@@ -877,7 +921,10 @@ footer {
     width: calc( 50% - 2%); }
     .gallery img:nth-child(2) {
       visibility: hidden;
-      width: 0; } }
+      width: 0; }
+  .banner img {
+    -o-object-position: 80%;
+    object-position: 80%; } }
 
 @media (max-width: 650px) {
   .heroTxt h1 {
@@ -907,7 +954,15 @@ footer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0)), url("../assets/homeHeaderBackground.jpg");
     background-position: 88%; }
   .heroContainer {
-    margin: 33% 2%; } }
+    margin: 33% 2%; }
+  .courseInfo {
+    padding: 0; }
+  .groupProgmImg img,
+  .newLocationImg img {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .banner img {
+    height: 350px; } }
 
 @media (max-width: 520px) {
   .gallery img {
@@ -926,6 +981,8 @@ footer {
   .heroContainer {
     margin: 45% 2%; }
   .newAdventureImg img {
+    height: 300px; }
+  .banner img {
     height: 300px; } }
 
 @media (max-width: 450px) {
