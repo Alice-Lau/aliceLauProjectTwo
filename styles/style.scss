@@ -113,14 +113,14 @@
 
 .icon {
     background: $mudGreen;
-    width: 50px;
-    height: 50px;
+    width: 3.5vw;
+    height: 3.5vw;
     border-radius: 50%;
-    padding-top: 8px;
+    padding-top: 9px;
     text-align: center;
 
     i {
-        font-size: 1.5rem;
+        font-size: 2vw;
         color: $iceBlue;
     }
 }
@@ -151,24 +151,32 @@
 
 .groupProgmImg {
     transform: translateY(-20%);
+
+    img {
+        box-shadow: 20px 20px 0 $marigold;
+    }
 }
 
 .newLocationImg {
     transform: translateY(20%);
-}
 
-.groupProgmImg img {
-    box-shadow: 20px 20px 0 $marigold;
-}
-
-.newLocationImg img {
-    box-shadow: -20px 20px 0 $marigold;
+    img {
+        box-shadow: -20px 20px 0 $marigold;
+    }
 }
 
 .groupProgmTxt,
 .newLocationTxt {
     width: 60%;
     padding: 3%;
+}
+
+.groupProgmTxt {
+    padding-right: 10%;
+}
+
+.newLocationTxt {
+    padding-left: 10%;
 }
 
 .freeTrial {
@@ -178,4 +186,206 @@
 .freeTrialTxt {
     padding: 10%;
     text-align: center;
+}
+
+//****************************************************//
+// media query
+//****************************************************//
+@media (max-width: 1360px) {
+    .wrapperHome header {
+        background-position: center center;
+    }
+
+    .heroImg {
+        width: 45%;
+    }
+
+    .heroTxt {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .heroTxt h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 1250px) {
+    .heroContainer {
+        transform: translateY(35%);
+    }
+
+    .newAdventureImg {
+        width: 35%;
+    }
+
+    .newAdventureTxt {
+        width: 65%;
+    }
+
+    .infoTxt h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .newAdventure,
+    .gallery,
+    .moreInfo,
+    .freeTrialTxt {
+        padding: 10% 5%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .wrapperHome header {
+        background-position: 66%;
+    }
+
+    .heroContainer {
+        transform: none;
+        margin: 8% 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .heroContainer {
+        width: 90%;
+        margin: 15% 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapperHome header {
+        background-position: right bottom;
+    }
+
+    .heroContainer {
+        width: 100%;
+        margin: 18% 0 15% 5%;
+
+        h1 {
+            font-size: 5.75rem;
+        }
+    }
+
+    .heroImg {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .newAdventureImg {
+        width: 50%;
+    }
+
+    .newAdventureTxt {
+        width: 50%;
+    }
+}
+
+@media (max-width: 950px) {
+    .newAdventure {
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .newAdventureImg,
+    .newAdventureTxt {
+        width: 100%;
+
+        img {
+            height: 400px;
+            object-fit: cover;
+            object-position: center 80%;
+        }
+    }
+
+    .newAdventureTxt {
+        text-align: center;
+
+        padding: 10% 5%;
+    }
+}
+
+@media (max-width: 860px) {
+    .heroTxt h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .wrapperHome header{
+        background-position: 85%;
+    }
+}
+
+@media (max-width: 650px) {
+    .heroTxt h1 {
+        font-size: 4.5rem;
+        line-height: 4rem;
+
+        span {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapperHome header {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0)),
+        url("../assets/homeHeaderBackground.jpg");
+        background-position: 88%;
+    }
+
+    .heroContainer {
+        margin: 33% 2%;
+    }
+}
+
+@media (max-width: 500px) {
+    .heroTxt h1 {
+        font-size: 4rem;
+        line-height: 3.5rem;
+
+        span {
+            font-size: 2rem;
+        }
+    }
+
+    .heroContainer {
+        margin: 45% 2%;
+    }
+
+    .newAdventureImg img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .heroTxt h1 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .heroContainer {
+        margin: 60% 2%;
+    }
+}
+
+@media(max-width: 380px) {
+    .heroContainer {
+        margin: 70% 0;
+    }
+
+    .heroTxt h1 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
 }

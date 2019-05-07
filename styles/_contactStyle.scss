@@ -64,3 +64,20 @@
     letter-spacing: 0.05rem;
     color: $iceBlue;
 }
+
+//****************************************************//
+//media Query
+//****************************************************//
+
+@media (max-width: 760px) {
+    .contactHeroTxt h1 {
+        line-height: 5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contactHeroTxt h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}

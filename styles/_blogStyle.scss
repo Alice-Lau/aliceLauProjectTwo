@@ -122,3 +122,30 @@
         padding: 0.3rem;
     }
 }
+
+//****************************************************//
+//media Query//
+//****************************************************//
+
+@media (max-width: 1170px) {
+    .wrapperBlog header{
+        background-position: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapperBlog header {
+        background-position: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapperBlog header {
+        background-position: 70%;
+    }
+
+    .blogHeroTxt {
+        align-items: flex-end;
+        margin-bottom: 10%;
+    }
+}
