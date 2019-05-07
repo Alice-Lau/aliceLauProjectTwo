@@ -98,17 +98,9 @@
 }
 
 .infoSelection {
-    width: calc( 50% - 2% );
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
-
-    &:nth-child(odd) {
-        margin-right: 1%
-    }
-
-    &::nth-child(even) {
-        margin-left: 1%;
-    }
 }
 
 .icon {
@@ -127,7 +119,7 @@
 
 .infoTxt {
     width: 90%;
-    padding-left: 3%;
+    padding: 0 0 3% 3%;
 }
 
 .wrapperHome h3 {
@@ -236,6 +228,29 @@
     .freeTrialTxt {
         padding: 10% 5%;
     }
+
+    .moreInfo {
+        flex-direction: column;
+    }
+
+    .infoSelection {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+        padding-top: 0.8rem;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+    .infoTxt {
+        flex-grow: 1;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -254,6 +269,8 @@
         width: 90%;
         margin: 15% 0;
     }
+
+
 }
 
 @media (max-width: 1000px) {
@@ -312,11 +329,24 @@
     .heroTxt h1 {
         font-size: 5rem;
     }
+
+    .infoTxt {
+        width: 50%;
+    }
 }
 
 @media (max-width: 790px) {
     .wrapperHome header{
         background-position: 85%;
+    }
+
+    .gallery img {
+        width: calc( 50% - 2%);
+
+        &:nth-child(2) {
+            visibility: hidden;
+            width: 0;
+        }
     }
 }
 
@@ -329,6 +359,22 @@
             font-size: 2.3rem;
         }
     }
+
+    .infoSelection {
+        width: 100%;
+        flex-direction: column;
+        padding: 3% 0;
+    }
+
+    .icon {
+        margin: 0 auto;
+    }
+
+    .infoTxt {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -340,6 +386,18 @@
 
     .heroContainer {
         margin: 33% 2%;
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery img {
+        width: 100%;
+        margin: 0;
+
+        &:last-child {
+            visibility: hidden;
+            width: 0;
+        }
     }
 }
 
