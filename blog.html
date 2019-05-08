@@ -24,11 +24,12 @@
         
                 <nav>
                     <ul class="navLinks">
+                        <li><a class="skipLink visuallyHidden" href=#mainBlog>skip to main content</a></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                        <li><a aria-label="Expand main navigation." href="#"><i aria-hidden="true" class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,7 +39,7 @@
             </div>
         </header>
         
-        <main>
+        <main id="mainBlog">
             <div class="blogLeftColumn">
                 <div class="blogLeftColumnInnerWrap">
                     <article class="blogPost">

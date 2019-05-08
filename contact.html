@@ -24,11 +24,12 @@
         
                 <nav>
                     <ul class="navLinks">
+                        <li><a class="skipLink visuallyHidden" href=#mainContact>skip to main content</a></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                        <li><a aria-label="Expand main navigation." href="#"><i aria-hidden="true" class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,7 +39,7 @@
             </div>
         </header>
         
-        <main>
+        <main id="mainContact">
             <div class="contactForm">
                     <form>
                         <fieldset>
@@ -67,26 +68,26 @@
                     <div class="mediaContact">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
+                                <a aria-label="Go to facebook page." href="#">
+                                    <i aria-hidden="true" class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
-                                    <i class="fab fa-instagram"></i>
+                                <a aria-label="Go to instagram page." href="#">
+                                    <i aria-hidden="true" class="fab fa-instagram"></i>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
+                                <a aria-label="Go to twitter page." href="#">
+                                    <i aria-hidden="true" class="fab fa-twitter"></i>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
-                                    <i class="fab fa-whatsapp"></i>
+                                <a aria-label="Contact us via Whatsapp." href="#">
+                                    <i aria-hidden="true" class="fab fa-whatsapp"></i>
                                 </a>
                             </li>
                         </ul>
