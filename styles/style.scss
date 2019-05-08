@@ -209,10 +209,6 @@
 }
 
 @media (max-width: 1250px) {
-    .heroContainer {
-        transform: translateY(35%);
-    }
-
     .newAdventureImg {
         width: 35%;
     }
@@ -269,15 +265,13 @@
     }
 
     .heroContainer {
-        transform: none;
-        margin: 8% 0;
+        transform: translateY(25%);
     }
 }
 
 @media (max-width: 1100px) {
     .heroContainer {
         width: 90%;
-        margin: 15% 0;
     }
 
     .groupProgmImg,
@@ -299,7 +293,7 @@
 
     .heroContainer {
         width: 100%;
-        margin: 18% 0 15% 5%;
+        // margin: 18% 0 15% 5%;
 
         h1 {
             font-size: 5.75rem;

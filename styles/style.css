@@ -887,10 +887,6 @@ footer {
     font-size: 5rem; } }
 
 @media (max-width: 1250px) {
-  .heroContainer {
-    -webkit-transform: translateY(35%);
-    -ms-transform: translateY(35%);
-    transform: translateY(35%); }
   .newAdventureImg {
     width: 35%; }
   .newAdventureTxt {
@@ -930,15 +926,13 @@ footer {
   .wrapperHome header {
     background-position: 66%; }
   .heroContainer {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    margin: 8% 0; } }
+    -webkit-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    transform: translateY(25%); } }
 
 @media (max-width: 1100px) {
   .heroContainer {
-    width: 90%;
-    margin: 15% 0; }
+    width: 90%; }
   .groupProgmImg,
   .groupProgmTxt,
   .newLocationImg,
@@ -953,8 +947,7 @@ footer {
   .wrapperHome header {
     background-position: right bottom; }
   .heroContainer {
-    width: 100%;
-    margin: 18% 0 15% 5%; }
+    width: 100%; }
     .heroContainer h1 {
       font-size: 5.75rem; }
   .heroImg {
