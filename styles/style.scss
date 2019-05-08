@@ -118,7 +118,7 @@
 }
 
 .infoTxt {
-    width: 90%;
+    width: 85%;
     padding: 0 0 3% 3%;
 }
 
@@ -200,11 +200,19 @@
     .heroTxt {
         width: 55%;
     }
+
+    .infoTxt h3 {
+        font-size: 1.9rem;
+    }
 }
 
 @media (max-width: 1300px) {
     .heroTxt h1 {
         font-size: 5rem;
+    }
+
+    .infoTxt h3 {
+        font-size: 1.8rem;
     }
 }
 
@@ -215,10 +223,6 @@
 
     .newAdventureTxt {
         width: 65%;
-    }
-
-    .infoTxt h3 {
-        font-size: 1.8rem;
     }
 }
 
