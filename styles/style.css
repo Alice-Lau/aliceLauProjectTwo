@@ -669,6 +669,30 @@ footer {
   letter-spacing: 0.05rem;
   color: #fafffe; }
 
+@media (max-width: 1020px) {
+  .wrapperContact main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .contactForm {
+    width: 90%; }
+    .contactForm form {
+      margin-left: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+  .contactInfo {
+    width: 90%;
+    text-align: center; }
+    .contactInfo ul {
+      width: 20%;
+      margin: 0 auto; } }
+
+@media (max-width: 1000px) {
+  .contactInfo ul {
+    width: 40%; } }
+
 @media (max-width: 760px) {
   .contactHeroTxt h1 {
     line-height: 5rem; } }
@@ -676,7 +700,9 @@ footer {
 @media (max-width: 400px) {
   .contactHeroTxt h1 {
     font-size: 4rem;
-    line-height: 4rem; } }
+    line-height: 4rem; }
+  .contactInfo ul {
+    width: 70%; } }
 
 .wrapperHome header {
   background: url("../assets/homeHeaderBackground.jpg");

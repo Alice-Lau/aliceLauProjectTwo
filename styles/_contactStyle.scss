@@ -68,6 +68,36 @@
 //****************************************************//
 //media Query
 //****************************************************//
+@media (max-width: 1020px) {
+    .wrapperContact main {
+        flex-direction: column;
+    }
+
+    .contactForm {
+        width: 90%;
+
+        form {
+            margin-left: 0;
+            transform: none;
+        }
+    }
+
+    .contactInfo {
+        width: 90%;
+        text-align: center;
+
+        ul {
+            width: 20%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contactInfo ul {
+        width: 40%;
+    }
+}
 
 @media (max-width: 760px) {
     .contactHeroTxt h1 {
@@ -79,5 +109,9 @@
     .contactHeroTxt h1 {
         font-size: 4rem;
         line-height: 4rem;
+    }
+
+    .contactInfo ul {
+        width: 70%;
     }
 }
