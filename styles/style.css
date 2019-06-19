@@ -254,8 +254,7 @@ header nav {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
   .navLinks li:last-child {
-    visibility: hidden;
-    width: 0; }
+    visibility: hidden; }
 
 .navLinks a {
   font-size: 1rem;
